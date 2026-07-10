@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Wedding Of Indah & Yani</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Pinyon+Script&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#fff5f5;
+overflow-x:hidden;
+color:#333;
+}
+
+/* COVER */
+
+.cover{
+height:100vh;
+background:linear-gradient(rgba(80,0,0,.45),rgba(80,0,0,.45)),
+url("cover.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+position:relative;
+overflow:hidden;
+}
+
+.cover-content{
+z-index:5;
+animation:fadeUp 2s;
+}
+
+.cover h3{
+letter-spacing:4px;
+font-weight:300;
+margin-bottom:15px;
+}
+
+.cover h1{
+font-size:65px;
+font-family:'Pinyon Script',cursive;
+margin-bottom:10px;
+}
+
+.cover h2{
+font-size:24px;
+letter-spacing:3px;
+margin-bottom:25px;
+}
+
+.cover p{
+font-size:18px;
+margin-bottom:35px;
+}
+
+.open-btn{
+display:inline-block;
+padding:15px 40px;
+border-radius:50px;
+background:#8b0000;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.4s;
+box-shadow:0 0 25px rgba(255,255,255,.3);
+}
+
+.open-btn:hover{
+background:#b30000;
+transform:scale(1.08);
+}
+
+/* Mawar */
+
+.rose{
+position:fixed;
+top:-50px;
+color:#ff0033;
+font-size:24px;
+animation:fall linear infinite;
+pointer-events:none;
+z-index:999;
+}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-50px) rotate(0deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.title{
+font-family:'Cinzel',serif;
+font-size:36px;
+color:#8b0000;
+margin-bottom:20px;
+}
+
+.subtitle{
+font-size:18px;
+line
+  <!-- ================= ACARA ================= -->
+<section id="acara" class="section">
+    <h2>Save The Date</h2>
+
+    <div class="card">
+        <h3>💍 Akad Nikah</h3>
+
+        <p><strong>Kamis, 24 September 2026</strong></p>
+        <p>09.00 WIB</p>
+
+        <p>
+            Desa Setro Hadi RT 05 RW 01<br>
+            Kecamatan Duduk Sampeyan<br>
+            Kabupaten Gresik
+        </p>
+
+        <a class="btn"
+        href="https://maps.app.goo.gl/1pwW66WZmwk6tejq9?g_st=ic"
+        target="_blank">
+        📍 Lihat Lokasi
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>🎉 Resepsi Pernikahan</h3>
+
+        <p><strong>Rabu, 30 September 2026</strong></p>
+        <p>10.00 WIB</p>
+
+        <p>
+            Desa Bendungan RT 04 RW 03<br>
+            Kecamatan Kudu<br>
+            Kabupaten Jombang
+        </p>
+
+        <a class="btn"
+        href="https://maps.app.goo.gl/YpWf49gLrGCjyXUs9?g_st=ic"
+        target="_blank">
+        📍 Lihat Lokasi
+        </a>
+    </div>
+
+</section>
+
+<!-- ================= COUNTDOWN ================= -->
+<section class="section">
+
+<h2>Menuju Hari Bahagia</h2>
+
+<div id="countdown">
+
+<div>
+<h3 id="days">0</h3>
+<span>Hari</span>
+</div>
+
+<div>
+<h3 id="hours">0</h3>
+<span>Jam</span>
+</div>
+
+<div>
+<h3 id="minutes">0</h3>
+<span>Menit</span>
+</div>
+
+<div>
+<h3 id="seconds">0</h3>
+<span>Detik</span>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const targetDate = new Date("September 24, 2026 09:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = targetDate - now;
+
+document.getElementById("days").innerHTML =
+Math.floor(distance/(1000*60*60*24));
+
+document.getElementById("hours").innerHTML =
+Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+document.getElementById("minutes").innerHTML =
+Math.floor((distance%(1000*60*60))/(1000*60));
+
+document.getElementById("seconds").innerHTML =
+Math.floor((distance%(1000*60))/1000);
+
+},1000);
+
+</script>
+
+<!-- ================= WEDDING GIFT ================= -->
+
+<section class="section">
+
+<h2>Wedding Gift</h2>
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Bank_Rakyat_Indonesia.svg"
+width="120">
+
+<h3>Bank BRI</h3>
+
+<p>A.N</p>
+
+<h3>INDAH KHUMAIRO NURUL</h3>
+
+<h2 id="rekening">
+002601169483507
+</h2>
+
+<button class="btn" onclick="copyRekening()">
+📋 Salin Nomor Rekening
+</button>
+
+</div>
+
+</section>
+
+<script>
+
+function copyRekening(){
+
+navigator.clipboard.writeText("002601169483507");
+
+alert("Nomor rekening berhasil disalin.");
+
+}
+
+</script>
+  <!-- ================= GALERI ================= -->
+<section id="gallery" class="section">
+
+<h2>Galeri Kami</h2>
+
+<div class="gallery">
+
+<img src="foto1.jpg" onclick="openImage(this.src)">
+<img src="foto2.jpg" onclick="openImage(this.src)">
+<img src="foto3.jpg" onclick="openImage(this.src)">
+<img src="foto4.jpg" onclick="openImage(this.src)">
+<img src="foto5.jpg" onclick="openImage(this.src)">
+<img src="foto6.jpg" onclick="openImage(this.src)">
+
+</div>
+
+</section>
+
+<div id="popup" class="popup" onclick="closeImage()">
+<img id="popup-img">
+</div>
+
+<style>
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-top:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+cursor:pointer;
+transition:.4s;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.popup img{
+width:90%;
+max-width:700px;
+border-radius:15px;
+}
+
+</style>
+
+<script>
+
+function openImage(src){
+document.getElementById("popup").style.display="flex";
+document.getElementById("popup-img").src=src;
+}
+
+function closeImage(){
+document.getElementById("popup").style.display="none";
+}
+
+</script>
+
+<!-- ================= MUSIK ================= -->
+
+<audio id="musik" loop>
+
+<source src="kusuma-pujaningsih.mp3" type="audio/mpeg">
+
+Browser Anda tidak mendukung audio.
+
+</audio>
+
+<script>
+
+window.addEventListener("click",function(){
+
+document.getElementById("musik").play();
+
+},{once:true});
+
+</script>
+
+<!-- ================= ANIMASI MAWAR ================= -->
+
+<div class="rose-container"></div>
+
+<style>
+
+.rose-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:1;
+}
+
+.rose{
+position:absolute;
+top:-50px;
+font-size:25px;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-50px) rotate(0deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+</style>
+
+<script>
+
+setInterval(function(){
+
+let bunga=document.createElement("div");
+
+bunga.className="rose";
+
+bunga.innerHTML="🌹";
+
+bunga.style.left=Math.random()*100+"%";
+
+bunga.style.animationDuration=(5+Math.random()*5)+"s";
+
+document.querySelector(".rose-container").appendChild(bunga);
+
+setTimeout(function(){
+
+bunga.remove();
+
+},10000);
+
+},500);
+
+</script>
+
+<!-- ================= PENUTUP ================= -->
+
+<section class="section">
+
+<h2>Terima Kasih</h2>
+
+<p>
+
+Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai.
+
+</p>
+
+<h3>
+
+Kami Yang Berbahagia
+
+</h3>
+
+<h2>
+
+AKHMAD YANI MA'ARIF
+
+<br>&
+
+<br>
+
+INDAH KHUMAIRO' NURUL ISTIQOMAH
+
+</h2>
+
+</section>
+
+<footer>
+
+Made with ❤️ for The Wedding of Yani & Indah
+
+</footer>
+
+<style>
+
+footer{
+
+padding:30px;
+
+text-align:center;
+
+background:#7b0f1a;
+
+color:white;
+
+margin-top:50px;
+
+}
+
+</style>
+  <!-- ================= LOADING SCREEN ================= -->
+
+<div id="loading-screen">
+    <div class="loader-content">
+        <div class="ring"></div>
+
+        <h1>The Wedding Of</h1>
+
+        <h2>Yani & Indah</h2>
+
+        <p>24 September 2026</p>
+    </div>
+</div>
+
+<style>
+
+#loading-screen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(180deg,#4b0d17,#7b1020,#b8860b);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:1.5s;
+}
+
+.loader-content{
+text-align:center;
+color:white;
+}
+
+.loader-content h1{
+font-family:'Cinzel',serif;
+letter-spacing:3px;
+}
+
+.loader-content h2{
+font-size:40px;
+font-family:'Pinyon Script',cursive;
+margin:15px 0;
+}
+
+.loader-content p{
+font-size:18px;
+}
+
+.ring{
+width:90px;
+height:90px;
+border:6px solid rgba(255,255,255,.2);
+border-top:6px solid gold;
+border-radius:50%;
+margin:auto;
+margin-bottom:25px;
+animation:spin 1.2s linear infinite;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
+
+</style>
+
+<script>
+
+window.onload=function(){
+
+setTimeout(function(){
+
+document.getElementById("loading-screen").style.opacity="0";
+
+setTimeout(function(){
+
+document.getElementById("loading-screen").style.display="none";
+
+},1500);
+
+},2500);
+
+}
+
+</script>
+
+<!-- ================= NAVIGASI BAWAH ================= -->
+
+<nav class="bottom-nav">
+
+<a href="#home">🏠<br>Home</a>
+
+<a href="#mempelai">💍<br>Mempelai</a>
+
+<a href="#acara">📅<br>Acara</a>
+
+<a href="#gallery">🖼<br>Galeri</a>
+
+<a href="#gift">🎁<br>Gift</a>
+
+</nav>
+
+<style>
+
+.bottom-nav{
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+background:#6d1020;
+
+display:flex;
+
+justify-content:space-around;
+
+padding:12px 0;
+
+z-index:9999;
+
+box-shadow:0 -3px 15px rgba(0,0,0,.3);
+
+}
+
+.bottom-nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:13px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.bottom-nav a:hover{
+
+color:gold;
+
+transform:translateY(-4px);
+
+}
+
+</style>
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="topBtn" onclick="topFunction()">
+
+⬆
+
+</button>
+
+<style>
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+bottom:90px;
+
+right:20px;
+
+background:gold;
+
+color:#5b0d16;
+
+border:none;
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+font-size:22px;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:9999;
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+transform:scale(1.1);
+
+}
+
+</style>
+
+<script>
+
+window.onscroll=function(){
+
+if(document.body.scrollTop>300 || document.documentElement.scrollTop>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+}
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+<!-- ================= ANIMASI FADE ================= -->
+
+<style>
+
+.section{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s;
+
+}
+
+.section.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+</style>
+
+<script>
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".section").forEach(el=>observer.observe(el));
+
+</script>
+  <!-- ================= RSVP & UCAPAN ================= -->
+<section id="rsvp" class="section">
+
+<h2>RSVP & Ucapan</h2>
+
+<form id="ucapanForm">
+
+<input type="text" id="nama" placeholder="Nama Anda" required>
+
+<textarea id="pesan" rows="4"
+placeholder="Tulis doa dan ucapan terbaik..." required></textarea>
+
+<button type="submit" class="btn">
+Kirim Ucapan
+</button>
+
+</form>
+
+<div id="listUcapan"></div>
+
+</section>
+
+<style>
+
+#ucapanForm{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+#ucapanForm input,
+#ucapanForm textarea{
+
+padding:15px;
+border-radius:12px;
+border:none;
+font-size:16px;
+background:#fff8f8;
+
+}
+
+.ucapan-item{
+
+background:white;
+padding:15px;
+border-radius:15px;
+margin-top:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+</style>
+
+<script>
+
+document.getElementById("ucapanForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let nama=document.getElementById("nama").value;
+
+let pesan=document.getElementById("pesan").value;
+
+let item=document.createElement("div");
+
+item.className="ucapan-item";
+
+item.innerHTML="<b>"+nama+"</b><br>"+pesan;
+
+document.getElementById("listUcapan").prepend(item);
+
+this.reset();
+
+});
+
+</script>
+
+<!-- ================= NAMA TAMU ================= -->
+
+<section class="section">
+
+<h3>Kepada Yth.</h3>
+
+<h2 id="namaTamu">Bapak/Ibu/Saudara/i</h2>
+
+</section>
+
+<script>
+
+const params=new URLSearchParams(window.location.search);
+
+const tamu=params.get("to");
+
+if(tamu){
+
+document.getElementById("namaTamu").innerHTML=decodeURIComponent(tamu);
+
+}
+
+</script>
+
+<!-- ================= WHATSAPP ================= -->
+
+<a href=https://wa.me/6285815087624
+class="wa-float"
+target="_blank">
+
+💬
+
+</a>
+
+<style>
+
+.wa-float{
+
+position:fixed;
+
+bottom:160px;
+
+right:20px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+z-index:9999;
+
+}
+
+</style>
+
+<!-- ================= SPARKLE ================= -->
+
+<style>
+
+.sparkle{
+
+position:fixed;
+
+width:5px;
+
+height:5px;
+
+background:gold;
+
+border-radius:50%;
+
+pointer-events:none;
+
+animation:spark 2s linear forwards;
+
+}
+
+@keyframes spark{
+
+0%{
+
+transform:scale(0);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-150px) scale(3);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+<script>
+
+setInterval(function(){
+
+let s=document.createElement("div");
+
+s.className="sparkle";
+
+s.style.left=Math.random()*window.innerWidth+"px";
+
+s.style.top=Math.random()*window.innerHeight+"px";
+
+document.body.appendChild(s);
+
+setTimeout(()=>{
+
+s.remove();
+
+},2000);
+
+},300);
+
+</script>
+
+<!-- ================= PENUTUP ================= -->
+
+<section class="section">
+
+<h2>Terima Kasih</h2>
+
+<p>
+
+Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.
+
+</p>
+
+<h2>
+
+AKHMAD YANI MA'ARIF
+
+<br>&
+
+<br>
+
+INDAH KHUMAIRO' NURUL ISTIQOMAH
+
+</h2>
+
+<p>
+
+24 September 2026
+
+</p>
+
+</section>
+  
+  
+  
